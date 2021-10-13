@@ -14,19 +14,14 @@ country.getCountries('')
 search.addEventListener('keyup', e => {
     country.getCountries(e.target.value)
         .then(data => {
-            const ui = new UI(data.data)
+            if (data.data.message)
 
-            if (data.data.message) {
-                ui.errorMessage()
-                    // console.log(data.data.message)
-            } else {
-                // console.log(e.target.value)
+            // console.log(e.target.value)
                 const countryInfo = document.querySelectorAll('.country');
-                // console.log(countryInfo)
-
-                ui.display();
-                console.log(data.data)
-            }
+            // console.log(countryInfo)
+            const ui = new UI(data.data)
+            ui.display();
+            console.log(data.data)
 
         })
 })

@@ -123,8 +123,7 @@ class UI {
     }
 
     errorMessage() {
-        const countries = document.querySelector('.countries');
-        countries.innerHTML = ` <h2 style='margin: auto; font-size:30px;padding-top:25px'>${this.country.message}</h2>`
+        const countries = document.querySelector('countries')
     }
 }
 console.log(getComputedStyle(document.body).backgroundColor)

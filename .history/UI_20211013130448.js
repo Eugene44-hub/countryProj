@@ -11,7 +11,7 @@ class UI {
     }
 
     display() {
-        let countries = document.querySelector('.countries');
+        this.countries = document.querySelector('.countries');
         let output = '';
 
 
@@ -52,7 +52,7 @@ class UI {
 
         }
 
-        countries.innerHTML = output
+        this.countries.innerHTML = output
         console.log()
         const countryInfo = countries.children;
 
@@ -123,8 +123,7 @@ class UI {
     }
 
     errorMessage() {
-        const countries = document.querySelector('.countries');
-        countries.innerHTML = ` <h2 style='margin: auto; font-size:30px;padding-top:25px'>${this.country.message}</h2>`
+
     }
 }
 console.log(getComputedStyle(document.body).backgroundColor)

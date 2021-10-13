@@ -18,7 +18,6 @@ search.addEventListener('keyup', e => {
 
             if (data.data.message) {
                 ui.errorMessage()
-                    // console.log(data.data.message)
             } else {
                 // console.log(e.target.value)
                 const countryInfo = document.querySelectorAll('.country');

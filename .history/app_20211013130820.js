@@ -14,19 +14,14 @@ country.getCountries('')
 search.addEventListener('keyup', e => {
     country.getCountries(e.target.value)
         .then(data => {
+            data.data.message
+
+            // console.log(e.target.value)
+            const countryInfo = document.querySelectorAll('.country');
+            // console.log(countryInfo)
             const ui = new UI(data.data)
-
-            if (data.data.message) {
-                ui.errorMessage()
-                    // console.log(data.data.message)
-            } else {
-                // console.log(e.target.value)
-                const countryInfo = document.querySelectorAll('.country');
-                // console.log(countryInfo)
-
-                ui.display();
-                console.log(data.data)
-            }
+            ui.display();
+            console.log(data.data)
 
         })
 })
@@ -34,8 +29,7 @@ search.addEventListener('keyup', e => {
 search.addEventListener('focus', e => {
     if (search.value == search.value)
         search.value = ''
-});
-mode.addEventListener('click', e => {
+}) mode.addEventListener('click', e => {
     UI.theme()
 })
 

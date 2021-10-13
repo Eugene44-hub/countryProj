@@ -17,16 +17,15 @@ search.addEventListener('keyup', e => {
             const ui = new UI(data.data)
 
             if (data.data.message) {
-                ui.errorMessage()
-                    // console.log(data.data.message)
-            } else {
-                // console.log(e.target.value)
-                const countryInfo = document.querySelectorAll('.country');
-                // console.log(countryInfo)
 
-                ui.display();
-                console.log(data.data)
-            }
+            } else
+
+            // console.log(e.target.value)
+                const countryInfo = document.querySelectorAll('.country');
+            // console.log(countryInfo)
+
+            ui.display();
+            console.log(data.data)
 
         })
 })
