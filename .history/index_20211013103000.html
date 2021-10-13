@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div class="header-container">
+    <header>
+        <h2>Where in the world?</h2>
+        <div class="mode"><i class="fas fa-moon" id="moon"></i> Dark mode</div>
+    </header>
+
+</div>
+
+<body>
+    <div class="container">
+        <div class="search-filter">
+            <label for="search">    
+                     <input type="text"  value="Search for a country..." id="search">
+            </label>
+
+
+
+            <div class="select">
+                <div class="default-text">Filter by region <i class="fas fa-chevron-down"></i>
+                </div>
+                <ul>
+                    <li id="asia" class="">Asia</li>
+                    <li id='europe'>Europe</li>
+                    <li id="africa">Africa</li>
+                    <li id="oceania">Oceania</li>
+                    <li id="america">America</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="country-container">
+
+            <div class="countries">
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script src="UI.js"></script>
+
+</html>

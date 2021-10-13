@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+.countries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+}
+
+.country {
+    flex-basis: 21%;
+    padding: 20px 0;
+}
+
+.about-country {
+    margin-top: 10px;
+}
+
+.country {
+    box-shadow: 4px 4px 15px rgb(218, 216, 216);
+}

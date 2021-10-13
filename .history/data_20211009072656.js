@@ -1,0 +1,10 @@
+const url = 'https://restcountries.com/v3.1/all';
+
+class Country {
+    getCountries = async function() {
+        const response = await fetch(url);
+        const data = await response.json();
+
+        return console.log(data[0].name.common)
+    }
+}
